@@ -1,0 +1,15 @@
+def repair_cost(metr, price):
+    return metr * price 
+ 
+def saving(metr, price):
+    return repair_cost(metr, price) * 0.30
+   
+def calc_saving(metr, price):
+    calc_metr = metr
+    calc_price = repair_cost(metr, price)    calc_cost = saving(metr, price)
+    print("Общая площадь вашей квартиры:", calc_metr, "кв.м")    print("Общая стоимость ремонта вашей квартиры", calc_price, "рублей")
+    print("Ваша экономия с Multiplan составит:", calc_cost, "рублей")    
+    
+calc_saving(178, 12000)
+# в скобках пишем два числа# первое число это площадь квартиры
+# второе число это стоимость ремонта за 1 кв.м
