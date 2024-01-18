@@ -6,8 +6,10 @@ def saving(metr, price):
    
 def calc_saving(metr, price):
     calc_metr = metr
-    calc_price = repair_cost(metr, price)    calc_cost = saving(metr, price)
-    print("Общая площадь вашей квартиры:", calc_metr, "кв.м")    print("Общая стоимость ремонта вашей квартиры", calc_price, "рублей")
+    calc_price = repair_cost(metr, price)
+    calc_cost = saving(metr, price)
+    print("Общая площадь вашей квартиры:", calc_metr, "кв.м")
+    print("Общая стоимость ремонта вашей квартиры", calc_price, "рублей")
     print("Ваша экономия составит:", calc_cost, "рублей")    
     
 calc_saving()
